@@ -38,7 +38,7 @@ def text_to_speech(text):
     engine.say(text)
     engine.runAndWait()
 
-# Main function
+# Main function start the code from here
 def speech_to_speech(target_lang="hi"):
     # Step 1: Capture Speech
     original_text = speech_to_text()
