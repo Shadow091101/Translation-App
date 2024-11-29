@@ -40,6 +40,8 @@ languages = {
     "Russian": "ru",
 }
 
+
+
 # Widgets
 tk.Label(root, text="Source Language:").grid(row=0, column=0, padx=10, pady=10, sticky="w")
 source_language = ttk.Combobox(root, values=list(languages.keys()), state="readonly")
