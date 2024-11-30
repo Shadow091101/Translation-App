@@ -41,7 +41,7 @@ def translate_text(source_text_box, target_text_box, source_language, target_lan
 def text_to_text():
     translator_window = ctk.CTkToplevel()
     translator_window.title("Text-to-Text Translator")
-    translator_window.geometry("500x500")
+    translator_window.geometry("500x600")
 
     l1 = ctk.CTkLabel(translator_window, text="Source Language:")
     l1.grid(row=0, column=0, padx=10, pady=10, sticky="w")
@@ -57,12 +57,12 @@ def text_to_text():
 
     l3 = ctk.CTkLabel(translator_window, text="Source Text:")
     l3.grid(row=2, column=0, padx=10, pady=10, sticky="nw")
-    source_text_box = ctk.CTkTextbox(translator_window, height=20, width=140)
+    source_text_box = ctk.CTkTextbox(translator_window, height=200, width=300)
     source_text_box.grid(row=2, column=1, padx=10, pady=10)
 
     l4 = ctk.CTkLabel(translator_window, text="Translated Text:")
     l4.grid(row=3, column=0, padx=10, pady=10, sticky="nw")
-    target_text_box = ctk.CTkTextbox(translator_window, height=20, width=140, state="normal")
+    target_text_box = ctk.CTkTextbox(translator_window, height=200, width=300, state="normal")
     target_text_box.grid(row=3, column=1, padx=10, pady=10)
 
     translate_button = ctk.CTkButton(

@@ -30,12 +30,15 @@ def speech_to_text():
 # Function: Translate text
 def translate_text(text, target_lang="hi"):
     translated = translator.translate(text, dest=target_lang)
-    print(f"Translated Text: {translated.text}")
-    return translated.text
+    translated_text=translated.text
+    print(translated_text)
+    print(f"Translated Text: {translated_text}")
+    return translated_text
 
 # Function: Convert text to speech
 def text_to_speech(text):
-    engine.say(text)
+    print(text)
+    engine.say("कैसे")
     engine.runAndWait()
 
 # Main function start the code from here
@@ -47,6 +50,7 @@ def speech_to_speech(target_lang="hi"):
 
     # Step 2: Translate Speech
     translated_text = translate_text(original_text, target_lang)
+    print("Speech = ",translated_text)
 
     # Step 3: Speak the Translated Speech
     print("Speaking Translated Speech...")
